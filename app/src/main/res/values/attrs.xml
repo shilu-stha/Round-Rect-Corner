@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RoundCornerView">
+        <attr name="rc_color" format="color" />
+        <attr name="rc_stroke_size" format="dimension" />
+        <attr name="rc_brush_type" format="enum">
+            <enum name="fill" value="0" />
+            <enum name="stroke" value="1" />
+        </attr>
+        <attr name="rc_corner_radius" format="dimension" />
+    </declare-styleable>
+</resources>

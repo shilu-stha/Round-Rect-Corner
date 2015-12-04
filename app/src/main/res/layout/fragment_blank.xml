@@ -1,0 +1,178 @@
+<!--<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--tools:context="com.shilu.rectroundcorner.BlankFragment">-->
+
+    <!--<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <RelativeLayout
+            android:id="@+id/rl_image_container"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp">
+
+            <com.shilu.rectroundcorner.widgets.RoundCornerView
+                android:id="@+id/cv_round_corner_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:rc_brush_type="stroke"
+                app:rc_color="@android:color/holo_blue_bright"
+                app:rc_stroke_size="2dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:gravity="left"
+                android:text="Hint" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_barcode_container"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp">
+
+            <com.shilu.rectroundcorner.widgets.RoundCornerView
+                android:id="@+id/cv_round_corner_barcode"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:rc_brush_type="stroke"
+                app:rc_color="@color/colorAccent"
+                app:rc_stroke_size="2dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:gravity="left"
+                android:text="HInt" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_resend_code_container"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp">
+
+            <com.shilu.rectroundcorner.widgets.RoundCornerView
+                android:id="@+id/cv_round_corner_resend_code"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:rc_brush_type="stroke"
+                app:rc_color="@color/colorAccent"
+                app:rc_stroke_size="2dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:gravity="left"
+                android:text="Hint" />
+
+
+        </RelativeLayout>
+
+        <!-- <RelativeLayout
+             android:id="@+id/rl_detail_container"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="10dp">
+
+             <com.shilu.rectroundcorner.widgets.RoundCornerView
+                 android:id="@+id/cv_round_corner_detail_bg"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:layout_marginTop="10dp"
+                 app:rc_brush_type="fill"
+                 app:rc_color="@android:color/holo_green_dark"
+                 app:rc_stroke_size="2dp" />
+
+             <TextView
+                 android:id="@+id/txt1"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentLeft="true"
+                 android:layout_alignParentStart="true"
+                 android:layout_centerVertical="true"
+                 android:layout_marginLeft="20dp"
+                 android:gravity="left"
+                 android:text="Hint" />
+
+             <TextView
+                 android:id="@+id/txt2"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentLeft="true"
+                 android:layout_alignParentStart="true"
+                 android:layout_below="@+id/txt1"
+                 android:layout_centerVertical="true"
+                 android:layout_marginLeft="20dp"
+                 android:gravity="left"
+                 android:text="Hint" />
+
+             <TextView
+                 android:id="@+id/txt3"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentLeft="true"
+                 android:layout_alignParentStart="true"
+                 android:layout_below="@+id/txt2"
+                 android:layout_centerVertical="true"
+                 android:layout_marginLeft="20dp"
+                 android:gravity="left"
+                 android:text="Hint" />
+
+             <TextView
+                 android:id="@+id/txt4"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentLeft="true"
+                 android:layout_alignParentStart="true"
+                 android:layout_below="@+id/txt3"
+                 android:layout_centerVertical="true"
+                 android:layout_marginLeft="20dp"
+                 android:gravity="left"
+                 android:text="Hint" />
+
+             <TextView
+                 android:id="@+id/txt5"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentLeft="true"
+                 android:layout_alignParentStart="true"
+                 android:layout_below="@+id/txt4"
+                 android:layout_centerVertical="true"
+                 android:layout_marginLeft="20dp"
+                 android:gravity="left"
+                 android:text="Hint" />
+
+         </RelativeLayout>-->
+    </LinearLayout>
+    <!--</ScrollView>-->
+
+<!--</FrameLayout>-->
